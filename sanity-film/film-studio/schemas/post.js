@@ -18,10 +18,15 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
+      name: 'url',
+      title: 'Vimeo or Youtube URL',
+      type: 'string',
+    },
+    {
+      name: 'director',
+      title: 'Director',
       type: 'reference',
-      to: {type: 'author'},
+      to: {type: 'director'},
     },
     {
       name: 'mainImage',
@@ -39,12 +44,13 @@ export default {
     },
     {
       name: 'publishedAt',
-      title: 'Published at',
+      title: 'Date released',
       type: 'datetime',
     },
     {
       name: 'body',
       title: 'Body',
+      description: 'A little about the film, who you worked with etc.',
       type: 'blockContent',
     },
   ],
@@ -52,7 +58,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      author: 'director.name',
       media: 'mainImage',
     },
     prepare(selection) {
