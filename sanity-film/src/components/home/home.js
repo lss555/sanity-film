@@ -1,11 +1,15 @@
 import React from 'react';
-import { HomeContainer } from './home-styles.js';
+import { HomeContainer, HomeTitleOne, HomeTitleTwo, HomeTitleThree, StarWarsTextContainer } from './home-styles.js';
 
 const Home = () => {
 
 	return (
 		<HomeContainer>
-			<h1>sheesh</h1>
+			<StarWarsTextContainer>
+				<HomeTitleOne>A Film</HomeTitleOne>
+				<HomeTitleTwo>Studio Driven By</HomeTitleTwo>
+				<HomeTitleThree>Research and Strategy</HomeTitleThree>
+			</StarWarsTextContainer>
 		</HomeContainer>
 		)
 
