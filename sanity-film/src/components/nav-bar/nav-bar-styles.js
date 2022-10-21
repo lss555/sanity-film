@@ -14,7 +14,6 @@ export const NavLogo = styled.img`
 	width: auto;
 	margin-top: -40px;
 	height: 180px;
-
 `;
 
 export const NavRight = styled.div`
@@ -24,6 +23,9 @@ export const NavRight = styled.div`
 	margin-right: 2rem;
 	margin-top: 0;
 	width: 33%;
+	@media screen and (max-width: 812px) {
+    display: none;
+  }
 `;
 
 export const NavMiddle = styled.div`
@@ -34,6 +36,9 @@ export const NavMiddle = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0;
+	@media screen and (max-width: 812px) {
+    display: none;
+  }
 `;
 
 export const NavLeft = styled.div`
@@ -49,4 +54,18 @@ export const NavLink = styled(LinkR)`
 
 export const Time = styled.h3`
 	color: white;
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 812px) {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    transfrom: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
 `;

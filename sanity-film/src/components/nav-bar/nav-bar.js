@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { NavContainer, NavLogo, NavMiddle, NavRight, NavLeft, NavLink, Time } from './nav-bar-styles.js';
-import Logo from '../images/sLogo.png'
+import { NavContainer, NavLogo, NavMiddle, NavRight, NavLeft, NavLink, Time, MobileIcon } from './nav-bar-styles.js';
+import Logo from '../images/sLogo.png';
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
 	const [time, setTime] = useState(new Date().toLocaleTimeString());
 	// let time = new Date().getTime();
 
@@ -26,6 +27,9 @@ const NavBar = () => {
 			<NavRight>
 				<Time>{time}</Time>
 			</NavRight>
+			<MobileIcon onClick={toggle}>
+        		<GiHamburgerMenu />
+      		</MobileIcon>
 		</NavContainer>
 		);
 };
