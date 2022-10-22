@@ -30,4 +30,6 @@ export const StarWarsTextContainer = styled.div`
 	margin: auto auto 0 auto;
 	justify-content: flex-end;
 	width: 90vw;
+	color: white;
 `;
+

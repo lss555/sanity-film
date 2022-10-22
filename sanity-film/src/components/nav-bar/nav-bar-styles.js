@@ -14,6 +14,9 @@ export const NavLogo = styled.img`
 	width: auto;
 	margin-top: -40px;
 	height: 180px;
+	:hover {
+		cursor: pointer;
+	}
 `;
 
 export const NavRight = styled.div`
@@ -50,6 +53,9 @@ export const NavLink = styled(LinkR)`
 	text-decoration: none;
 	color: white;
 	margin: 1rem;
+	:hover {
+		color: black;
+	}
 `;
 
 export const Time = styled.h3`

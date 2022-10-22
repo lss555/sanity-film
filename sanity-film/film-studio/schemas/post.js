@@ -37,10 +37,10 @@ export default {
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'highlight',
+      title: 'Highlight?',
+      description: 'If you set Hightlight to true (green) it will be on your homepage. I recommend only having 3 set to your home page',
+      type: 'boolean',
     },
     {
       name: 'publishedAt',
