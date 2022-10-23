@@ -45,7 +45,11 @@ export default {
     {
       name: 'publishedAt',
       title: 'Date released',
-      type: 'datetime',
+      type: 'date',
+      description: 'Use Format 2022-10-18 AKA: YYYY-MM-DD',
+      options: {
+        dateFormat: 'YYYY-MM',
+      }
     },
     {
       name: 'body',
