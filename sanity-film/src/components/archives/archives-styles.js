@@ -24,12 +24,20 @@ export const ArchivesFilmsContainer = styled.div`
 	
 `;
 
-export const YearColumn = styled.div`
+export const DateColumn = styled.div`
 	
 `;
 
-export const FilmNameColumn = styled.div`
-	
+export const TitleColumn = styled.div`
+	display: flex;
+	width: 30vw;
+	margin-left: 2rem;
+	text-align: flex-start;
+	margin-left: 2rem;
+	@media screen and (max-width: 812px) {
+    
+    margin-left: 0;
+  }
 `;
 
 export const YearH3 = styled.h3`
@@ -44,12 +52,12 @@ export const YearH3 = styled.h3`
 export const FilmNameH3 = styled.h3`
 	display: flex;
 	text-decoration: none;
-	margin-left: 2rem;
 	text-align: flex-start;
+	margin-left: 0;
 	@media screen and (max-width: 812px) {
     width: 40vw;
     margin-left: 0;
-    padding-right: 2rem;
+    padding-right: 1rem;
 
   }
 `;
@@ -85,14 +93,11 @@ export const DateHeader = styled.h2`
 `;
 
 export const FilmNameHeader = styled.h2`
-	display: flex;
-	margin-left: 2rem;
 	color: white;
-	text-align: flex-start;
 	@media screen and (max-width: 812px) {
     font-size: 24px;
     width: 40vw;
-    margin-right: auto;
+    padding-right: 1rem;
     margin-left: 0;
   }
 `;
@@ -103,7 +108,9 @@ export const SubHeaderContainer = styled.div`
 	border-bottom: 2px solid black;
 	width: 30vw;
 	@media screen and (max-width: 812px) {
-    
     width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 25vw;
   }
 `;
