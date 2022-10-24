@@ -10,7 +10,7 @@ const Archives = () => {
 	 useEffect(() => {
 	   sanityClient
 	     .fetch(
-	       `*[_type == "post"]{
+	       `*[_type == "post" && about != true]{
 	       title,
 	       slug,
 	       publishedAt,

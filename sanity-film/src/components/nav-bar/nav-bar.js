@@ -25,6 +25,7 @@ const NavBar = ({ toggle }) => {
 			<NavMiddle>
 				<NavLink to='/archives'>Archives</NavLink>
 				<NavLink to='/about'>About</NavLink>
+				<NavLink to='/our-team'>The Team</NavLink>
 			</NavMiddle>
 			<NavRight>
 				<Time>{time}</Time>

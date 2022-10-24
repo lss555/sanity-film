@@ -1,64 +1,30 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
-  margin-right: auto;
-  margin-left: auto;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1200px;
+	min-height: 100vh;
+	text-align: center;
+	width: 100%;
+	margin-top: 5rem;
 `;
 
-export const TopHalf = styled.div`
-  margin-right: auto;
-  margin-left: auto;
-  height: 30vh;
-  
+export const AboutHeader = styled.h2`
+	display: flex;
+	margin: 3rem auto 3rem auto;
 `;
 
-export const BottomHalf = styled.div`
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  height: auto;
-  margin-top: 5rem;
+export const AboutTextContainer = styled.div`
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
 `;
 
-export const TopHalfTitle = styled.h1`
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-`;
-
-export const TopHalfSubTitle = styled.h2`
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-`;
-
-export const AboutBody = styled.div`
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-`;
-
-export const AuthorPicture = styled.img`
-  display: flex;
-  border-radius: 50%;
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-`;
-
-export const AuthorContainer = styled.div`
-  width: 90%;
-  height: auto;
-  margin: 3rem auto 3rem auto;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+export const AboutImage = styled.img`
+	margin-right: .5rem;
+	margin-left: .5rem;
 `;

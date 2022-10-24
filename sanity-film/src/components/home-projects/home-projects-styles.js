@@ -7,7 +7,7 @@ export const HomeProjectsContainer = styled.div`
 	width: 100%;
 	margin: auto;
 	min-height: 100vh;
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		flex-direction: column;
 
   }
@@ -19,7 +19,7 @@ export const HomeProjectsImg = styled.img`
 	height: 40vh;
 	margin: 2rem 0 2rem auto;
 	justify-content: flex-end;
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		margin: 1rem auto 1rem auto;
 		width: 70vw;
 		height: auto;
@@ -36,7 +36,7 @@ export const HomeProjectsTitle = styled.h2`
 	:hover {
 		color: black;
 	}
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		width: 100%;
 
 
@@ -50,7 +50,7 @@ export const HomeProjectsLink = styled(Link)`
 	width: 100%;
 	flex-direction: row;
 	margin: auto;
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		flex-direction: column;
 
   }
@@ -62,7 +62,7 @@ export const HomeProjectsWrapper = styled.div`
 	width: 90vw;
 	margin: auto;
 	justify-content: center;
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		
 
   }
@@ -74,7 +74,7 @@ export const HomeProjectsText = styled.div`
 	margin-left: 1rem;
 	margin-top: 2rem;
 	justify-content: center;
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1168px) {
 		margin-top: 1rem;
   }
 `;

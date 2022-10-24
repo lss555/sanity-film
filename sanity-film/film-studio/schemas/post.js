@@ -43,6 +43,12 @@ export default {
       type: 'boolean',
     },
     {
+      name: 'about',
+      title: 'About page info',
+      description: "one post should have this as true (green) and that's all, the post body is your about page text.",
+      type: 'boolean',
+    },
+    {
       name: 'publishedAt',
       title: 'Date released',
       type: 'date',
