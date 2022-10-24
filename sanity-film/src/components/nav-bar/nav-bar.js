@@ -23,9 +23,8 @@ const NavBar = ({ toggle }) => {
 				</Link>
 			</NavLeft>
 			<NavMiddle>
-				<NavLink>Work</NavLink>
 				<NavLink to='/archives'>Archives</NavLink>
-				<NavLink>About</NavLink>
+				<NavLink to='/about'>About</NavLink>
 			</NavMiddle>
 			<NavRight>
 				<Time>{time}</Time>

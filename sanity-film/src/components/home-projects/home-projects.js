@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import sanityClient from "../../client.js";
-import { HomeProjectsContainer } from './home-projects-styles.js';
+import { HomeProjectsContainer, HomeProjectsImg, HomeProjectsTitle, HomeProjectsLink, HomeProjectsWrapper, HomeProjectsText, HomeProjectsTextContainer } from './home-projects-styles.js';
 import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
 
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
-
 
 
 const HomeProjects = () => {
@@ -21,6 +20,7 @@ useEffect(() => {
         `*[_type == "post" && highlight]{
         title,
         slug,
+        body,
         mainImage{
           asset->{
           _id,
@@ -35,19 +35,26 @@ useEffect(() => {
 
 return (
 		<HomeProjectsContainer>
-      		<div>
-        		{allPostsData &&
-          		allPostsData.map((post, index) => (
-            		<Link to={"/" + post.slug.current} key={post.slug.current}>
-              			<span key={index}>
-                			<img src={urlFor(post.mainImage.asset.url).width(200).url()} alt="" />
-                			<span>
-                  			<h2>{post.title}</h2>
-                			</span>
-              			</span>
-            		</Link>
-          		))}
-      		</div>
+      	<div>
+      		{allPostsData &&
+        		allPostsData.map((post, index) => (
+              <HomeProjectsWrapper key={post.slug.current}>
+          		<HomeProjectsLink to={"/" + post.slug.current}>
+              <HomeProjectsTextContainer>
+                	<HomeProjectsTitle>{post.title}</HomeProjectsTitle>
+                  <HomeProjectsText>
+                  <BlockContent
+                blocks={post.body}
+                projectId={sanityClient.clientConfig.projectId}
+                dataset={sanityClient.clientConfig.dataset}
+              />
+              </HomeProjectsText>
+              </HomeProjectsTextContainer>
+                  <HomeProjectsImg src={urlFor(post.mainImage.asset.url).url()} alt="" />
+          		</HomeProjectsLink>
+              </HomeProjectsWrapper>
+        	))}
+      	</div>
 		</HomeProjectsContainer>
 	)
 };  

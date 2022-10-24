@@ -4,7 +4,7 @@ import NavBar from './components/nav-bar/nav-bar.js';
 import SideBar from './components/sidebar/sidebar.js';
 import OneFilm from './components/one-film/one-film.js';
 import Archives from './components/archives/archives.js';
-
+import About from './components/about/about.js';
 
 import Home from './components/home/home.js';
 import './App.css'
@@ -24,6 +24,7 @@ function App() {
         <NavBar toggle={toggle}/>
         
         <Routes>
+          <Route element={<About />} path="/about" />
           <Route element={<Home />} path="/" />
           <Route element={<OneFilm />} path="/:slug" />
           <Route element={<Archives />} path="/archives" />
