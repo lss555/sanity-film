@@ -68,15 +68,10 @@ export const StarWarsTextContainer = styled.div`
 	width: 90vw;
 	color: white;
 	@media screen and (max-width: 690px) {
-		margin-top: -2.5rem;
+		margin-top: -4rem;
   }
 
 `;
 
-// @media screen and (max-width: 812px) {
-//     width: 50vw;
-//     margin-left: 0;
-//     margin-right: 0;
-//     overflow-wrap: anywhere;
-//   }
+
 
