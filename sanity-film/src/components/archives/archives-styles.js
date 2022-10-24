@@ -46,6 +46,7 @@ export const YearH3 = styled.h3`
 	@media screen and (max-width: 812px) {
     width: 40vw;
     margin-right: 1rem;
+
   }
 `;
 
@@ -58,7 +59,12 @@ export const FilmNameH3 = styled.h3`
     width: 40vw;
     margin-left: 0;
     padding-right: 1rem;
-
+  }
+  @media screen and (max-width: 325px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-wrap: anywhere;
   }
 `;
 
