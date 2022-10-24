@@ -3,6 +3,7 @@ import sanityClient from "../../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import { OurTeamContainer, TopHalf, TopHalfTitle, TopHalfSubTitle, OurTeamBody, AuthorPicture, BottomHalf, AuthorContainer } from './our-team-styles.js';
+import { motion } from 'framer-motion';
 
 
 
@@ -36,7 +37,11 @@ const OurTeam = () => {
 if (!ourTeamData) return <div>Loading...</div>;
 
 	return (
-		<>
+		<motion.div 
+					initial={{opacity: 0}}
+		      animate={{opacity: 1}}
+		      exit={{opacity: 0}}
+					>
           <OurTeamContainer>
       <TopHalfTitle>Our Team</TopHalfTitle>
       {ourTeamData.map((author, index) => (
@@ -59,9 +64,7 @@ if (!ourTeamData) return <div>Loading...</div>;
         </AuthorContainer>
       ))}
       </OurTeamContainer>
-      
-
-    </>
+    </motion.div>
 		)
 };
 

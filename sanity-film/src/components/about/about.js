@@ -3,6 +3,7 @@ import sanityClient from "../../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import { AboutContainer, AboutHeader, AboutTextContainer, AboutImage } from './about-styles.js';
 import imageUrlBuilder from "@sanity/image-url";
+import { motion } from 'framer-motion';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -35,13 +36,20 @@ const About = () => {
 
 	if (!aboutData) return <div>Loading...</div>;
 	return (
-		<AboutContainer>
-			<AboutTextContainer>
-				<AboutHeader>About Sovereign Studios</AboutHeader>
-				<BlockContent blocks={aboutData.body}></BlockContent>
-			</AboutTextContainer>
-			<AboutImage src={urlFor(aboutData.mainImage.asset.url).url()}/>
-		</AboutContainer>
+		<motion.div 
+				initial={{opacity: 0}}
+	      animate={{opacity: 1}}
+	      exit={{opacity: 0}}
+				>
+				<AboutContainer>
+					<AboutTextContainer>
+						<AboutHeader>About Sovereign Studios</AboutHeader>
+						<BlockContent blocks={aboutData.body}></BlockContent>
+					</AboutTextContainer>
+					<AboutImage src={urlFor(aboutData.mainImage.asset.url).url()}/>
+			
+			</AboutContainer>
+		</motion.div>
 		)
 };
 
