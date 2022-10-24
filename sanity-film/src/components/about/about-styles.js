@@ -10,6 +10,7 @@ export const AboutContainer = styled.div`
 	text-align: center;
 	width: 100%;
 	margin-top: 5rem;
+	padding-bottom: 1rem;
 `;
 
 export const AboutHeader = styled.h2`

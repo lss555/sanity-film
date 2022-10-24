@@ -7,7 +7,9 @@ import Archives from './components/archives/archives.js';
 import OurTeam from './components/our-team/our-team.js';
 import About from './components/about/about.js';
 import Home from './components/home/home.js';
-import './App.css'
+import Footer from './components/footer/footer.js';
+import ScrollToTop from './components/scroll-to-top';
+import './App.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +21,10 @@ function App() {
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className='App-container'>
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
-        
         <Routes>
           <Route element={<About />} path="/about" />
           <Route element={<OurTeam />} path="/our-team" />
@@ -30,6 +32,7 @@ function App() {
           <Route element={<OneFilm />} path="/:slug" />
           <Route element={<Archives />} path="/archives" />
         </Routes>
+        <Footer />
       </div>
     </HashRouter>
   );

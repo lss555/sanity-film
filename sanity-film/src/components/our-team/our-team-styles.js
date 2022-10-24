@@ -43,14 +43,31 @@ export const OurTeamBody = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  @media screen and (max-width: 820px) {
+    margin-top: 17rem;
+  }
+  @media screen and (max-width: 512px) {
+    margin-top: 5rem;
+  }
+  @media screen and (max-width: 415px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const AuthorPicture = styled.img`
   display: flex;
   border-radius: 50%;
   height: 100%;
+  
   margin-right: auto;
   margin-left: auto;
+  @media screen and (max-width: 820px) {
+    width: 70%;
+    height: auto;
+    justify-content: center;
+
+  }
 `;
 
 export const AuthorContainer = styled.div`
@@ -60,4 +77,10 @@ export const AuthorContainer = styled.div`
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  @media screen and (max-width: 820px) {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
 `;
