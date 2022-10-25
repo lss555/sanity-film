@@ -20,12 +20,18 @@ export const AboutHeader = styled.h2`
 
 export const AboutTextContainer = styled.div`
 	display: flex;
-	width: 100%;
+	width: 90%;
 	flex-direction: column;
 	justify-content: center;
-	@media screen and (max-width: 812px) {
-    margin-right: .5rem;
-    margin-left: .5rem;
+	margin: auto;
+	@media screen and (max-width: 900px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+	@media screen and (max-width: 700px) {
+    margin-right: auto;
+    margin-left: auto;
     width: 90%;
   }
 `;

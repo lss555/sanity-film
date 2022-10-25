@@ -40,7 +40,7 @@ const About = () => {
 				initial={{opacity: 0}}
 	      animate={{opacity: 1}}
 	      exit={{opacity: 0}}
-	      style={{ display: 'flex' }}
+	      style={{ display: 'flex', marginRight: 'auto', marginLeft: 'auto', width: '100%' }}
 				>
 				<AboutContainer>
 					<AboutTextContainer>
