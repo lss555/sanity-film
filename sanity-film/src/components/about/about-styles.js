@@ -11,6 +11,9 @@ export const AboutContainer = styled.div`
 	width: 100%;
 	margin-top: 5rem;
 	padding-bottom: 1rem;
+	@media screen and (max-width: 768px) {
+    	
+  }
 `;
 
 export const AboutHeader = styled.h2`
@@ -39,4 +42,14 @@ export const AboutTextContainer = styled.div`
 export const AboutImage = styled.img`
 	margin-right: .5rem;
 	margin-left: .5rem;
+	@media screen and (max-width: 820px) {
+    	width: 90vw;
+    	height: auto;
+    	margin: auto;
+  }
+  @media screen and (max-width: 325px) {
+    	width: 85vw;
+    	height: auto;
+    	margin: auto;
+  }
 `;
