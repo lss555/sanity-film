@@ -23,6 +23,11 @@ export const AboutTextContainer = styled.div`
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
+	@media screen and (max-width: 812px) {
+    margin-right: .5rem;
+    margin-left: .5rem;
+    width: 90%;
+  }
 `;
 
 export const AboutImage = styled.img`
