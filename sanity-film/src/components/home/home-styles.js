@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const HomeContainer = styled.div`
 	height: 100%;
 	margin-top: -100px;
-	
-	z-index: 10;
 `;
 // background-color: rgba(0, 0, 0, .9);
 
@@ -32,7 +30,7 @@ export const HomeTitleOne = styled.h3`
   }
   @media screen and (max-width: 300px) {
 		font-size: .6rem;
-		margin-bottom: 5rem;
+		margin-bottom: 6rem;
   }
 `;
 
@@ -61,7 +59,7 @@ export const HomeTitleTwo = styled.h2`
   }
   @media screen and (max-width: 300px) {
 		font-size: .8rem;
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
   }
 `;
 
@@ -86,7 +84,7 @@ export const HomeTitleThree = styled.h1`
   }
   @media screen and (max-width: 300px) {
 		font-size: 1rem;
-		
+		margin-bottom: 1rem;
   }
 `;
 
@@ -118,14 +116,30 @@ export const VideoBackground = styled.video`
 	
 `;
 
+export const Borders = styled.div`
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
+	right: 1.5rem;
+	height: 100vh;
+	
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	z-index: 2;
+	@media screen and (max-width: 812px) {
+		left: .8rem;
+		right: .8rem;
+  }
+`;
+
 export const Overlay = styled.div`
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
+	left 0;
+	right: 0;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .3);
+	z-index: 3
 `;
-
 
 

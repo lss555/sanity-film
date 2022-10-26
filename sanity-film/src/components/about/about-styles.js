@@ -19,6 +19,7 @@ export const AboutContainer = styled.div`
 export const AboutHeader = styled.h2`
 	display: flex;
 	margin: 3rem auto 3rem auto;
+	color: white;
 `;
 
 export const AboutTextContainer = styled.div`
@@ -27,6 +28,7 @@ export const AboutTextContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
+	color: white;
 	@media screen and (max-width: 900px) {
     margin-right: auto;
     margin-left: auto;

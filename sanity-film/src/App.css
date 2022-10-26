@@ -44,8 +44,6 @@
   margin-left: 1.5rem;
   border-left: solid 2px black;
   min-height:  100vh;
-  z-index: 100;
-  
 }
 
 @media screen and (max-width: 812px) {
