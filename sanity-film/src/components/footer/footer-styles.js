@@ -50,6 +50,7 @@ export const FooterInnerLink = styled(Link)`
 
 export const InnerLinksContainer = styled.div`
 	display: flex;
+	text-align: center;
 	@media screen and (max-width: 880px) {
     flex-direction: column;
 
@@ -58,6 +59,7 @@ export const InnerLinksContainer = styled.div`
 
 export const OuterLinksContainer = styled.div`
 	display: flex;
+	text-align: center;
 	@media screen and (max-width: 880px) {
     flex-direction: column;
     

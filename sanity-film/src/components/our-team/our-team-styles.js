@@ -28,6 +28,7 @@ export const TopHalfTitle = styled.h1`
   padding-top: 2rem;
   display: flex;
   justify-content: center;
+  color: white;
 `;
 
 export const TopHalfSubTitle = styled.h2`
@@ -35,6 +36,7 @@ export const TopHalfSubTitle = styled.h2`
   margin-left: auto;
   display: flex;
   justify-content: center;
+  color: white;
 `;
 
 export const OurTeamBody = styled.div`
@@ -44,6 +46,7 @@ export const OurTeamBody = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
+  color: white;
   @media screen and (max-width: 820px) {
     margin-top: 17rem;
   }
