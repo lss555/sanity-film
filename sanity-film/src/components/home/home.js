@@ -18,7 +18,7 @@ const Home = () => {
 					<HomeTitleOne>A Film</HomeTitleOne>
 					<HomeTitleTwo>Studio Driven By</HomeTitleTwo>
 					<HomeTitleThree>Research and Strategy</HomeTitleThree>
-					<VideoBackground src={videoBg} autoPlay loop muted/>
+					<VideoBackground src={videoBg} defaultMuted autoPlay loop muted/>
 				</StarWarsTextContainer>
 				<HomeProjects />	
 			</HomeContainer>

@@ -28,7 +28,7 @@ export const HomeTitleOne = styled.h3`
   }
   @media screen and (max-width: 480px) {
 		font-size: .66rem;
-		margin-bottom: 6rem;
+		margin-bottom: 9rem;
   }
   @media screen and (max-width: 300px) {
 		font-size: .6rem;
@@ -57,7 +57,7 @@ export const HomeTitleTwo = styled.h2`
   }
   @media screen and (max-width: 480px) {
 		font-size: 1rem;
-		margin-bottom: 4rem;
+		margin-bottom: 7rem;
   }
   @media screen and (max-width: 300px) {
 		font-size: .8rem;
@@ -82,6 +82,7 @@ export const HomeTitleThree = styled.h1`
   }
   @media screen and (max-width: 480px) {
 		font-size: 1.5rem;
+		margin-bottom: 4rem
   }
   @media screen and (max-width: 300px) {
 		font-size: 1rem;
