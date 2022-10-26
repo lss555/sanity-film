@@ -4,6 +4,7 @@ import HomeProjects from '../home-projects/home-projects.js';
 import { motion } from 'framer-motion';
 import videoBg from '../images/videoBg.mp4';
 
+
 const Home = () => {
 
 	return (
@@ -19,7 +20,9 @@ const Home = () => {
 					<HomeTitleOne>A Film</HomeTitleOne>
 					<HomeTitleTwo>Studio Driven By</HomeTitleTwo>
 					<HomeTitleThree>Research and Strategy</HomeTitleThree>
-					<VideoBackground src={videoBg} defaultMuted playsinline autoPlay loop muted/>
+					<VideoBackground muted defaultMuted playsinline autoPlay loop>
+						<source src={videoBg} type="video/mp4" />
+					</VideoBackground>
 				</StarWarsTextContainer>
 				<HomeProjects />	
 			</HomeContainer>
@@ -27,5 +30,7 @@ const Home = () => {
 		)
 
 };
+
+// <video data-v-fab6bddc="" id="video" preload="metadata" playsinline="" autoplay="autoplay" loop="loop" class="video responsive"><source data-v-fab6bddc="" src="/hp-videos/We_Are_Visual_Creatures.mp4" type="video/mp4"></video>
 
 export default Home;
