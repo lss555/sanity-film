@@ -1,7 +1,8 @@
 import React from 'react';
-import { HomeContainer, HomeTitleOne, HomeTitleTwo, HomeTitleThree, StarWarsTextContainer } from './home-styles.js';
+import { HomeContainer, HomeTitleOne, HomeTitleTwo, HomeTitleThree, StarWarsTextContainer, VideoBackground, Overlay } from './home-styles.js';
 import HomeProjects from '../home-projects/home-projects.js';
 import { motion } from 'framer-motion';
+import videoBg from '../images/videoBg.mp4';
 
 const Home = () => {
 
@@ -13,9 +14,11 @@ const Home = () => {
 			>
 			<HomeContainer>
 				<StarWarsTextContainer>
+					<Overlay></Overlay>
 					<HomeTitleOne>A Film</HomeTitleOne>
 					<HomeTitleTwo>Studio Driven By</HomeTitleTwo>
 					<HomeTitleThree>Research and Strategy</HomeTitleThree>
+					<VideoBackground src={videoBg} autoPlay loop muted/>
 				</StarWarsTextContainer>
 				<HomeProjects />	
 			</HomeContainer>

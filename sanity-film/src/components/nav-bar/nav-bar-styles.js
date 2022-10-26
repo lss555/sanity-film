@@ -4,9 +4,9 @@ import { Link as LinkR } from 'react-router-dom';
 export const NavContainer = styled.div`
 	display: flex;
 	height: 100px;
-	
-	margin-top: 0;
+	z-index: 5;
 	width: 100%;
+	position: relative;
 `;
 
 export const NavLogo = styled.img`
